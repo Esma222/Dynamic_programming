@@ -19,7 +19,7 @@ public class Esma_Beydili_2020510018 {
     }
     
     
-    // Returns the minimum value that can
+    // Returns the minimum value that can.
     static int dpPlayer(int N, int salary[],
                         int demand[], int n,int p,int c)
     {
@@ -42,11 +42,11 @@ public class Esma_Beydili_2020510018 {
             	}            	
             	else if(demand[i-1]>p) {
             		
-            		int arrMin[]=new int[(demand[i-1]-p)+w+1] ;//bir indeksin alabileceði tüm olasý deðerleri içinde bulundurur
+            		int arrMin[]=new int[(demand[i-1]-p)+w+1] ;//bir indeksin alabileceÃ°i tÃ¼m olasÃ½ deÃ°erleri iÃ§inde bulundurur
             		   if(w>=0&&w<p)
             		   {
             			for(int m=(demand[i-1]-p)+w;m>=0;m--) {
-            				arrMin[m]= (K[i-1][m]+ (((demand[i-1]-p)+w-m)*c))+ K[0][w];//sondaki k[0][w] hep salary ekler, 0. salary olmadýðý için salary arrayini kullanmadým
+            				arrMin[m]= (K[i-1][m]+ (((demand[i-1]-p)+w-m)*c))+ K[0][w];//sondaki k[0][w] hep salary ekler, 0. salary olmadÃ½Ã°Ã½ iÃ§in salary arrayini kullanmadÃ½m
             				
             			}
             			
@@ -55,7 +55,7 @@ public class Esma_Beydili_2020510018 {
             			for(int j=0; j<arrMin.length;j++) {
             				if(arrMin[j]==min)
             				{
-            					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+            					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
             				}
             			}
             			K[i][w]=min;
@@ -71,7 +71,7 @@ public class Esma_Beydili_2020510018 {
                			for(int j=0; j<arrMin.length;j++) {
                				if(arrMin[j]==min)
                				{
-               					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+               					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
                				}
                			}
                			K[i][w]=min;
@@ -87,7 +87,7 @@ public class Esma_Beydili_2020510018 {
                			for(int j=0; j<arrMin.length;j++) {
                				if(arrMin[j]==min)
                				{
-               					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+               					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
                				}
                			}
                			K[i][w]=min;
@@ -103,7 +103,7 @@ public class Esma_Beydili_2020510018 {
                    			for(int j=0; j<arrMinN.length;j++) {
                    				if(arrMinN[j]==min)
                    				{
-                   					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+                   					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
                    				}
                    			}
                    			K[i][w]=min;
@@ -114,9 +114,9 @@ public class Esma_Beydili_2020510018 {
             			
             		
             	}
-            	///////////////////////////////demandin p ye eþit ya da küçük olduðu durumlar için
+            	///////////////////////////////demandin p ye eÃ¾it ya da kÃ¼Ã§Ã¼k olduÃ°u durumlar iÃ§in
             	else {
-            		int arrMin[]=new int[(p-demand[i-1])+w] ;//bir indeksin alabileceði tüm olasý deðerleri içinde bulundurur
+            		int arrMin[]=new int[(p-demand[i-1])+w] ;//bir indeksin alabileceÃ°i tÃ¼m olasÃ½ deÃ°erleri iÃ§inde bulundurur
             		
                     if(w>=0&&w<demand[i-1]) {
                     	if(arrMin.length==0) {
@@ -129,7 +129,7 @@ public class Esma_Beydili_2020510018 {
                  			for(int j=0; j<arrMinN.length;j++) {
                  				if(arrMinN[j]==min)
                  				{
-                 					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+                 					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
                  				}
                  			}
                  			K[i][w]=min;
@@ -143,7 +143,7 @@ public class Esma_Beydili_2020510018 {
             			for(int j=0; j<arrMin.length;j++) {
             				if(arrMin[j]==min)
             				{
-            					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+            					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
             				}
             			}
             			K[i][w]=min;
@@ -160,7 +160,7 @@ public class Esma_Beydili_2020510018 {
             			for(int j=0; j<arrMin.length;j++) {
             				if(arrMin[j]==min)
             				{
-            					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+            					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
             				}
             			}
             			K[i][w]=min;
@@ -178,7 +178,7 @@ public class Esma_Beydili_2020510018 {
             			for(int j=0; j<arrMin.length;j++) {
             				if(arrMin[j]==min)
             				{
-            					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+            					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
             				}
             			}
             			K[i][w]=min;
@@ -193,7 +193,7 @@ public class Esma_Beydili_2020510018 {
           			for(int j=0; j<arrMinN.length;j++) {
           				if(arrMinN[j]==min)
           				{
-          					K2[i][w]= j;//minimum cost için nereden geldiðini bulmak için
+          					K2[i][w]= j;//minimum cost iÃ§in nereden geldiÃ°ini bulmak iÃ§in
           				}
           			}
           			K[i][w]=min;
@@ -207,7 +207,7 @@ public class Esma_Beydili_2020510018 {
           
                 }
             }
-       System.out.println("**************************");//minimum costun nereden geldiðini yazdýrmak için
+       System.out.println("**************************");//minimum costun nereden geldiÃ°ini yazdÃ½rmak iÃ§in
         int x=0;
         for(int a=n;a>=0;a--) {
         	System.out.println("["+a+","+x+"] : "+K[a][x]);
